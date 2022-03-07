@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-ticket-tracker/static/css/main.073c9b0a.css",
+    "main.js": "/react-ticket-tracker/static/js/main.5606cb8a.js",
+    "static/js/787.c3d74657.chunk.js": "/react-ticket-tracker/static/js/787.c3d74657.chunk.js",
+    "static/media/logo.svg": "/react-ticket-tracker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-ticket-tracker/index.html",
+    "main.073c9b0a.css.map": "/react-ticket-tracker/static/css/main.073c9b0a.css.map",
+    "main.5606cb8a.js.map": "/react-ticket-tracker/static/js/main.5606cb8a.js.map",
+    "787.c3d74657.chunk.js.map": "/react-ticket-tracker/static/js/787.c3d74657.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5606cb8a.js"
+  ]
+}
