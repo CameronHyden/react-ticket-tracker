@@ -1,14 +1,30 @@
+import "./App.scss";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
+import team from "./data/team";
 
-import './App.css';
+const employees = [
+  team
+]
+console.log(employees)
 
-function App() {
+const App = () => {
+  const allEmployeeCards = team.map((employeeObject) => {
+    
+    return (
+      <EmployeeCard employeeArr ={employees}
+        employeeName={employeeObject.name}
+        employeeRole={employeeObject.role}
+        employeeId={employeeObject.id}
+        key={employeeObject.id}
+      />
+    );
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <div className="card-container">{allEmployeeCards}</div>
     </div>
   );
-}
+};
 
 export default App;
