@@ -1,4 +1,5 @@
 import React from "react";
+import "./DateTime.scss";
 
 const dateTime = () => {
   const showDate = new Date();
@@ -14,9 +15,9 @@ const dateTime = () => {
     ":" +
     showDate.getMinutes();
   return (
-    <div>
-      <input type="text" value={displayTodaysDate} readOnly={true} />
-       {displayTime}
+    <div className="dateTime-container">
+      <input className="date-box" type="text" value={displayTodaysDate} readOnly={true} />
+      <span className="time-box">{displayTime}</span> 
     </div>
   );
 };

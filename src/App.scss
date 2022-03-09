@@ -4,5 +4,17 @@
     padding: 1rem;
     padding: 10px 50px 20px 50px;
   }
-  
+
+  .ticket-application__container{
+    
+    border: solid 1px red;
+    padding: 20px;
+  }
+
+  .dateSearch-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+ 
   

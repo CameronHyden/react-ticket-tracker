@@ -2,6 +2,8 @@ import "./App.scss";
 import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
 import team from "./data/team";
 import DateTime from "./components/DateTime/DateTime";
+import SearchBar  from "./components/SearchBar/SearchBar";
+import react, { useState} from "react";
 
 
 
@@ -18,12 +20,16 @@ const App = () => {
     );
   });
 
+  // const SearchInput = () =>{
+  //   const[input, setInput] = useSate("")
+  // }
+
   return (
     <>
-    <section>
-      <div>
+    <div className="ticket-application__container">
+    <section className="dateSearch-container">
         <DateTime />
-      </div>
+        <SearchBar />
     </section>
 
     <section>
@@ -31,6 +37,7 @@ const App = () => {
       <div className="card-container">{allEmployeeCards}</div>
     </div>
     </section>
+    </div>
     </>
   );
 };
