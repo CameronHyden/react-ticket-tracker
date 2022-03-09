@@ -1,20 +1,27 @@
 .allEmployee-cards {
- 
-    text-align: center;
-    padding: 1rem;
-    padding: 10px 50px 20px 50px;
-  }
+  text-align: center;
+  padding: 1rem;
+  padding: 10px 50px 20px 50px;
+}
 
-  .ticket-application__container{
-    
-    border: solid 1px red;
-    padding: 20px;
-  }
+.ticket-application__container {
+  margin-top: 150px;
+  border: solid 2px #e8e8e4;
+  padding: 20px;
+  background-color: #ffe5d9;
+}
 
-  .dateSearch-container{
+.dateSearch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 600px) {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    flex-direction: row;
+    align-items: normal;
   }
- 
-  
+}

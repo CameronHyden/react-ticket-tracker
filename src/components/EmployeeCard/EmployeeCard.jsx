@@ -5,7 +5,7 @@ import leftArrow from "../../assets/images/left-arrow.png";
 import rightArrow from "../../assets/images/right-arrow.png";
 import "./EmployeeCard.scss";
 
-const EmployeeCard = ({ employeeName, employeeRole, employeeId,  }) => {
+const EmployeeCard = ({ employeeName, employeeRole, employeeId, }) => {
  const [currentCard, newCard] = useState(0);
 
  const handleIncrement = () => {

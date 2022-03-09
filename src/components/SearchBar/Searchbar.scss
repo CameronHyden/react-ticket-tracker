@@ -1,5 +1,11 @@
 
 .searchBox{
+    padding: 10px;
+    border-color: #ffd7ba;
+    margin-bottom: 10px;
+    @media screen and (min-width: 600px) {
     margin-left: 50px;
-
+    padding: 10px;
+    border-color: #ffd7ba;
+    }
 }
