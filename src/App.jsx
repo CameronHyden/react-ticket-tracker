@@ -13,13 +13,12 @@ const App = () => {
   };
 
   const filterEmployees = team.filter((employee) => {
-    const employeeCardsToLower = employee.name.toLowerCase();
-    console.log(employeeCardsToLower);
+    const employeeCardsToLower =
+      employee.name.toLowerCase() && employee.role.toLowerCase();
     return employeeCardsToLower.includes(searchTerm) && <EmployeeCard />;
   });
-  console.log(filterEmployees);
 
-  const allEmployeeCards = team.map((employeeObject) => {
+  const allEmployeeCards = filterEmployees.map((employeeObject) => {
     return (
       <EmployeeCard
         employeeName={employeeObject.name}

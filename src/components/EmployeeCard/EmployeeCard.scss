@@ -4,13 +4,11 @@
   flex: 1 1;
   display: flex;
   overflow-x: auto;
-  
-
 
   > .employee-card {
-    position: relative;
     background-color: #fec89a;
-    height: 200px; 
+    position: relative;
+    height: 300px;
     display: block;
     width: 200px;
     margin: 10px 20px;
@@ -26,25 +24,40 @@
     > .employee-card__role {
       font-size: 1rem;
     }
-    > .employee-card__left-arrow {
-      width: 10px;
-      background-color: rgba($color-white, 0.4);
-      box-shadow: 0px 10px 20px rgba($color-black, 0.6);
-      padding: 5px;
-      border-radius: 15px;
-      position: absolute;
-      bottom: 60px;
-      left: 20px;
-    }
-    > .employee-card__right-arrow {
-      width: 10px;
-      background-color: rgba($color-white, 0.4);
-      box-shadow: 0px 10px 20px rgba($color-black, 0.6);
-      padding: 5px;
-      border-radius: 15px;
-      position: absolute;
-      bottom: 60px;
-      right: 20px;
+    > .counter-container {
+      display: block;
+      flex: auto;
+      position: relative;
+      margin-top: 100px;
+      h3 {
+        font-size: 1.1rem;
+        color: white;
+      }
+      .counter {
+        padding-bottom: 5px;
+      }
+      > .employee-card__left-arrow {
+        width: 10px;
+        background-color: rgba($color-white, 0.4);
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+          rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        padding: 5px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+      }
+      > .employee-card__right-arrow {
+        width: 10px;
+        background-color: rgba($color-white, 0.4);
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+          rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        padding: 5px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+      }
     }
   }
 }

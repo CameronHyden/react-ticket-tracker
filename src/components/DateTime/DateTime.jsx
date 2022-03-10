@@ -8,16 +8,19 @@ const dateTime = () => {
     "/" +
     (showDate.getMonth() + 1) +
     "/" +
-    showDate.getFullYear(); 
-  
-  const displayTime =
-    showDate.getHours() +
-    ":" +
-    showDate.getMinutes();
+    showDate.getFullYear();
+
+  const displayTime = showDate.getHours() + ":" + showDate.getMinutes();
+
   return (
     <div className="dateTime-container">
-      <input className="date-box" type="text" value={displayTodaysDate} readOnly={true} />
-      <span className="time-box">{displayTime}</span> 
+      <input
+        className="date-box"
+        type="text"
+        value={displayTodaysDate}
+        readOnly={true}
+      />
+      <span className="time-box">{displayTime}</span>
     </div>
   );
 };
