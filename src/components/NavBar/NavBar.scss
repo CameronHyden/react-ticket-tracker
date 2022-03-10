@@ -1,11 +1,15 @@
-.greetingImage{
-    width: 50px;
-    height: 50px ;
-
+.greetingImage {
+  width: 50px;
+  height: 50px;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  &__settings {
+    width: 30px;
+    height: 30px;
+  }
 }

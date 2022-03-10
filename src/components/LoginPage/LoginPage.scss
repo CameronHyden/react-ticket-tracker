@@ -1,0 +1,26 @@
+.login-page {
+  background-color: #d8e2dc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__form > * {
+    margin: 3px;
+    padding: 5px;
+  }
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 35px;
+  }
+}
